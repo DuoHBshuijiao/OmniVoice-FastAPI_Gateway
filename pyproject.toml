@@ -34,6 +34,8 @@ dependencies = [
     "torchaudio>=2.4",
     "transformers>=5.3.0",
     "accelerate",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
     "pydub",
     "gradio",
     "tensorboardX",
@@ -58,6 +60,7 @@ eval = [
 omnivoice-infer = "omnivoice.cli.infer:main"
 omnivoice-infer-batch = "omnivoice.cli.infer_batch:main"
 omnivoice-demo = "omnivoice.cli.demo:main"
+omnivoice-api = "omnivoice.api.server:main"
 
 [project.urls]
 Homepage = "https://github.com/k2-fsa/OmniVoice"
